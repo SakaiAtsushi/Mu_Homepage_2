@@ -79,7 +79,7 @@ http://〜〜〜〜〜.com/
 ";
 }
 //	都道府県
-$pref_list = array(	
+$pref_list = array(
 	"1" => "北海道",
 	"2" => "青森県",
 	"3" => "岩手県",
@@ -271,7 +271,7 @@ if (!$_REQUEST["mode"]) {
 		} else if ($val["func"] == 10) {
 			$mail_body .= "■" . $val["title"] . "：" . $pref_list[$form[$val["name"] . "_pref"]] . $form[$val["name"] . "_address"] . "\n";
 		} else if ($val["func"] == 11) {
-			$mail_body .= "■" . $val["title"] . "：" . $form[$val["name"] . "_year"] . "年" . 
+			$mail_body .= "■" . $val["title"] . "：" . $form[$val["name"] . "_year"] . "年" .
 				$form[$val["name"] . "_month"] . "月" . $form[$val["name"] . "_day"] . "日\n";
 		} else if ($val["func"] == 12) {
 			$mail_body .= "■" . $val["title"] . "：" . $form[$val["name"] . "_month"] . "月" . $form[$val["name"] . "_day"] . "日\n";
