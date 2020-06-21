@@ -22,7 +22,7 @@
 	85% {opacity: 0;}
 	100% {opacity: 0;}
 }
-/*3枚目*/
+3枚目
 @keyframes slide3 {
 	0% {opacity: 0;}
 	50% {opacity: 0; transform: scale(1);}
@@ -32,6 +32,7 @@
 	100% {opacity: 0;}
 }
 
+
 /*mainimg
 ---------------------------------------------------------------------------*/
 /*画像ブロック*/
@@ -40,11 +41,11 @@
 	position: fixed;	/*スクロールしても固定表示させる指定*/
 	top: 0px;
 	width: 100%;
-	background: url(../images/0.jpg) no-repeat center center/cover;	/*最初の１枚目（土台画像）*/
+	background: url(../images/image_slide_0.png) no-repeat center center/cover;	/*最初の１枚目（土台画像）*/
 }
 /*３枚画像の共通設定*/
 .slide1,.slide2,.slide3 {
-	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-duration: 10s;	/*実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	position: absolute;left:0px;top:0px;width: 100%;height: auto;
 	animation-fill-mode: both;
@@ -70,4 +71,3 @@
 	z-index: 2;
 	width: 100%;
 }
-
